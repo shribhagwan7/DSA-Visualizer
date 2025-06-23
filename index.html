@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualization</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DSA Visualization</h1>
+    </header>
+    <main>
+        <div class="div-pillors" id="div-pillors"></div>
+        <div class="clickable-div">
+            <div class="sorting">
+                <label for="sorting-algo">Algorithm: </label>
+                <select name="sorting-algo" id="algorithm">
+                    <option value="" disabled selected>Select Algorithm</option>
+                    <option value="Bubble-Sort">Bubble Sort</option>
+                    <option value="Selection-Sort">Selection Sort</option>
+                    <option value="Insertion-Sort">Insertion Sort</option>
+                    <option value="Merge-Sort">Merge Sort</option>
+                </select>
+            </div>
+            <div class="total-ele">
+                <label for="size">Array Size: </label>
+                <input style="width: 130px;" type="number" name="totalSize" id="size" placeholder="Array Size">
+            </div>
+            <div class="sort-order">
+                <label for="sorting-order">Order: </label>
+                <select name="sorting-order" id="order">
+                    <option value="select-order" disabled selected>Select Order</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+            </div>
+            <div class="btn">
+                <div class="generate-btn">
+                    <button id="generate">Sort</button>
+                </div>
+                <div class="generate-btn">
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Developed by - Shri Bhagwan Kumar</p>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
